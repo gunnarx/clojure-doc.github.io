@@ -180,7 +180,7 @@ take an optional base string:</p><pre><code class="klipse-clojure nohighlight">(
 </code></pre><pre><code class="klipse-clojure nohighlight">(gensym "base")
 ;= base57
 </code></pre><p>There is a shortcut: if a symbol ends in <code>#</code> within a syntax quote form, it will be
-expanded by the compiler into a gensym (aka. an auto-gensym):</p><pre><code class="clojure">(defmacro yes-no-&gt;boolean
+expanded by the compiler into a gensym (aka. an auto-gensym):</p><pre><code class="klipse-clojure nohighlight">(defmacro yes-no-&gt;boolean
   [val]
   `(let [b# (= ~val "yes")]
      b#))
